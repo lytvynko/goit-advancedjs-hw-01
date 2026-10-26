@@ -1,0 +1,18 @@
+@import url('./styles.css');
+
+.task-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 48px 0;
+}
+
+.task-list a {
+  font-weight: 500;
+  color: #747bff;
+}
+
+.task-list a:hover,
+.task-list a:focus {
+  text-decoration: underline;
+}
