@@ -24,14 +24,9 @@ function cleanPageUrls() {
     const [pathname, search = ''] = (req.url ?? '').split('?');
     const page = pathname.replace(/^\/|\/$/g, '');
 
-    const query = search ? `?${search}` : '';
-
-    if (page === 'gallery') {
-      req.url = `/gallery/index.html${query}`;
-    }
-
-    if (page === 'form') {
-      req.url = `/2-form.html${query}`;
+    if (page === 'gallery' || page === 'form') {
+      const query = search ? `?${search}` : '';
+      req.url = `/${page}/index.html${query}`;
     }
 
     next();
