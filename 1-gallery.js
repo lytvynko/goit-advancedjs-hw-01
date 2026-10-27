@@ -3,4 +3,4 @@ import"./assets/modulepreload-polyfill-B5Qt9EMX.js";import{S as i}from"./assets/
         <img class="gallery-image" src="${o}" alt="${a}" />
       </a>
     </li>`).join("");e.insertAdjacentHTML("beforeend",n);new i(".gallery a",{captionsData:"alt",captionPosition:"bottom",captionDelay:250});
-//# sourceMappingURL=gallery-index.js.map
+//# sourceMappingURL=1-gallery.js.map
